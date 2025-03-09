@@ -85,12 +85,30 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
     #  thunderbird
-      git
     ];
+    shell = pkgs.zsh;
   };
 
-  # Install firefox.
-  programs.firefox.enable = true;
+  programs = {
+    firefox = {
+      enable = true;
+    };
+    git = {
+      enable = true;
+    };
+    vim = {
+      enable = true;
+    };
+    #vscode = {
+    #  enable = true;
+    #};
+    starship = {
+      enable = true;
+    };
+    zsh = {
+      enable = true;
+    };
+  };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;

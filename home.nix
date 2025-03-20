@@ -1,4 +1,11 @@
 {
+  imports = [
+    ./zsh.nix
+    ./git.nix
+    ./browser.nix
+    ./vscode.nix
+  ];
+
   home = rec {
     username="emag";
     homeDirectory = "/home/${username}";

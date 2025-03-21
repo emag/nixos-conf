@@ -1,0 +1,5 @@
+{
+  programs.sbt = {
+    enable = true;
+  };
+}

@@ -4,6 +4,8 @@
     ./git.nix
     ./browser.nix
     ./vscode.nix
+    ./java.nix
+    ./sbt.nix
   ];
 
   home = rec {
